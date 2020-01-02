@@ -11,9 +11,20 @@
 |
 */
 
-Route::get('/', 'WelcomeController')->name('welcome');
-Route::get('/courses', 'CoursesController@index')->name('courses');
-
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('home', 'HomeController@index')->name('home'); //user dashboard
+
+Route::get('/', 'WelcomeController')->name('welcome'); //website front/home page
+
+Route::get('courses', 'CoursesController@index')->name('courses');
+
+Route::get('teachers', 'TeachersController@index')->name('teachers');
+
+Route::get('events', 'EventsController@index')->name('events');
+
+Route::get('about-us', 'AboutUsController@index')->name('about-us');
+
+Route::get('contact', 'ContactController@index')->name('contact');
+
+Route::resource('slider', 'SliderController');

@@ -28,50 +28,52 @@
         </div>
     </div>
     </div>
-    <nav class="navbar navbar-default probootstrap-navbar">
+<nav class="navbar navbar-default probootstrap-navbar">
     <div class="container">
         <div class="navbar-header">
-        <div class="btn-more js-btn-more visible-xs">
-            <a href="#"><i class="icon-dots-three-vertical "></i></a>
-        </div>
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.html" title="uiCookies:Enlight">Enlight</a>
+            <div class="btn-more js-btn-more visible-xs">
+                <a href="#"><i class="icon-dots-three-vertical "></i></a>
+            </div>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{{ route('welcome') }}" title="uiCookies:Enlight">Enlight</a>
         </div>
 
         <div id="navbar-collapse" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-        
-            <li  @if (Route::currentRouteName() == 'welcome') class="active" @endif ><a href="{{ route('welcome') }}">Home</a></li>
-            <li  @if (Route::currentRouteName() == 'courses') class="active" @endif ><a href="{{ route('courses') }}">Courses</a></li>
+            <ul class="nav navbar-nav navbar-right">
             
-            <li><a href="teachers.html">Teachers</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li class="dropdown">
-            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Pages</a>
-            <ul class="dropdown-menu">
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="courses.html">Courses</a></li>
-                <li><a href="course-single.html">Course Single</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li class="dropdown-submenu dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle"><span>Sub Menu</span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Second Level Menu</a></li>
-                    <li><a href="#">Second Level Menu</a></li>
-                    <li><a href="#">Second Level Menu</a></li>
-                    <li><a href="#">Second Level Menu</a></li>
-                </ul>
+                <li  @if (Route::currentRouteName() == 'welcome') class="active" @endif ><a href="{{ route('welcome') }}">Home</a></li>
+                <li  @if (Route::currentRouteName() == 'courses') class="active" @endif ><a href="{{ route('courses') }}">Courses</a></li>
+                <li @if (Route::currentRouteName() == 'teachers') class="active" @endif ><a href="{{ route('teachers') }}">Teachers</a></li>
+                <li @if (Route::currentRouteName() == 'events') class="active" @endif ><a href="{{ route('events') }}">Events</a></li>
+                
+            
+                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Pages</a>
+                    <ul class="dropdown-menu">
+                        <li @if (Route::currentRouteName() == 'about-us') class="active" @endif ><a href="{{ route('about-us') }}">About Us</a></li>
+                        <li  @if (Route::currentRouteName() == 'courses') class="active" @endif ><a href="{{ route('courses') }}">Courses</a></li>
+                        <li @if (Route::currentRouteName() == 'teachers') class="active" @endif ><a href="{{ route('teachers') }}">Teachers</a></li>
+                        <li @if (Route::currentRouteName() == 'events') class="active" @endif ><a href="{{ route('events') }}">Events</a></li>
+
+                        <li class="dropdown-submenu dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle"><span>Sub Menu</span></a>
+                            <ul class="dropdown-menu">
+                                <li @if (Route::currentRouteName() == 'about-us') class="active" @endif ><a href="{{ route('about-us') }}">About Us</a></li>
+                                <li @if (Route::currentRouteName() == 'contact') class="active" @endif ><a href="{{ route('contact') }}">Contact</a></li>
+                                <li  @if (Route::currentRouteName() == 'courses') class="active" @endif ><a href="{{ route('courses') }}">Courses</a></li>
+                                <li @if (Route::currentRouteName() == 'teachers') class="active" @endif ><a href="{{ route('teachers') }}">Teachers</a></li>
+                                <li @if (Route::currentRouteName() == 'events') class="active" @endif ><a href="{{ route('events') }}">Events</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </li>
-                <li><a href="news.html">News</a></li>
+                <li @if (Route::currentRouteName() == 'contact') class="active" @endif ><a href="{{ route('contact') }}">Contact</a></li>
             </ul>
-            </li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
         </div>
     </div>
 </nav>

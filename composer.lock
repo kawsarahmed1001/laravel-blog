@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "92095327b9af0c90f8245c5d6a659ab4",
+    "content-hash": "005e07789237c60c0f0e5549feebfe00",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -2964,6 +2964,57 @@
                 "environment"
             ],
             "time": "2019-09-10T21:37:39+00:00"
+        },
+        {
+            "name": "wildside/userstamps",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WildsideUK/Laravel-Userstamps.git",
+                "reference": "e530ea5606b17c700a46b293f163477e901964a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WildsideUK/Laravel-Userstamps/zipball/e530ea5606b17c700a46b293f163477e901964a5",
+                "reference": "e530ea5606b17c700a46b293f163477e901964a5",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^5.1|^6.0",
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "illuminate/database": "^5.1|^6.0",
+                "orchestra/testbench": "^3.1|^4.0",
+                "phpunit/phpunit": "^5.0|^6.0|^7.0|^8.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Wildside\\Userstamps\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "WILDSIDE",
+                    "email": "hello@wildside.uk",
+                    "homepage": "https://wildside.uk"
+                }
+            ],
+            "description": "Laravel Userstamps provides an Eloquent trait which automatically maintains `created_by` and `updated_by` columns on your model, populated by the currently authenticated user in your application.",
+            "keywords": [
+                "created_by",
+                "deleted_by",
+                "eloquent",
+                "laravel",
+                "updated_by",
+                "userstamps"
+            ],
+            "time": "2019-10-21T08:26:20+00:00"
         }
     ],
     "packages-dev": [
@@ -3079,16 +3130,16 @@
         },
         {
             "name": "facade/ignition",
-            "version": "1.13.0",
+            "version": "1.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facade/ignition.git",
-                "reference": "1d2103aefecc9c4e6975bcc77fc5eceb330adb33"
+                "reference": "03a26e0c4f48bf88523137a527e413a9b7c23436"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facade/ignition/zipball/1d2103aefecc9c4e6975bcc77fc5eceb330adb33",
-                "reference": "1d2103aefecc9c4e6975bcc77fc5eceb330adb33",
+                "url": "https://api.github.com/repos/facade/ignition/zipball/03a26e0c4f48bf88523137a527e413a9b7c23436",
+                "reference": "03a26e0c4f48bf88523137a527e413a9b7c23436",
                 "shasum": ""
             },
             "require": {
@@ -3146,7 +3197,7 @@
                 "laravel",
                 "page"
             ],
-            "time": "2019-11-27T11:17:18+00:00"
+            "time": "2020-01-02T12:03:02+00:00"
         },
         {
             "name": "facade/ignition-contracts",
